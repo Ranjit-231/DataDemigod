@@ -100,7 +100,8 @@
 }
 
 .product-container .product:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    box-shadow: 20px 20px 30px 30px rgba(40, 39, 39, 0.02);
+    scale: 1.1;
 }
 
 .product-container .product-about {
