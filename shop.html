@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <!-- navigation bar started -->
+    <nav
+        class="fixed  top-0 flex items-start sm:h-[6vw] h-[9vw]  w-[100%] justify-between z-10 pt-[2vw] pr-[10.4vw] pb-[2vw] pl-[10.4vw] bg-[white]">
+
+        <img class="sm:h-[3vw] h-[5vw] w-[17vw] invert" src="images/WhatsApp Image 2024-05-02 at 22.01.06_6bd35b20.jpg"
+            alt="" srcset="">
+        <div class="nav-part2 flex gap-[4vw] items-start z-10 pl-[2vw] pr-[2vw]">
+            <div class="nav-elem">
+                <h4 class="sm:text-[1vw] text-[2.1vw] font-[600] mb-[2.2vw]"><a href="index.html">Home</a></h4>
+                <h5><span><a href="#featured-product">Featured Products</span></a></h5>
+                <h5><span><a href="#new-arivals">New Arrivals</span></a></h5>
+                <h5><span><a href="#offers">Offers</span></a></h5>
+                <h5><span><a href="#sign-up">Sign-Up</span></a></h5>
+                <h5><span><a href="#more-information">More Information</span></a></h5>
+            </div>
+            <div class="nav-elem">
+                <h4 class="sm:text-[1vw] text-[2.1vw] font-[600] mb-[2.2vw]"><a href="shop.html">Shop</a></h4>
+                <h5><span><a href="#shirt">Shirts </a></span></h5>
+                <h5><span><a href="#pants">Pants </a></span></h5>
+                <h5><span><a href="#t-shirt">T-shirts</a> </span></h5>
+                <h5><span><a href="#trouser">Troussers </a></span></h5>
+                <h5><span><a href="#more-information">More Information</span></a></h5>
+
+            </div>
+
+            <div class="nav-elem">
+                <h4 class="sm:text-[1vw] text-[2.1vw] font-[600] mb-[2.2vw]"><a href="blog.html">Blog</a></h4>
+                <h5><span><a href="#hoodes">Hoodes</a></span></h5>
+                <h5><span><a href="#quiff">Quiff</a></span></h5>
+                <h5><span><a href="#skater">Skater</a></span></h5>
+                <h5><span><a href="#trend">Trends</a></span></h5>
+            </div>
+            <div class="nav-elem">
+                <h4 class="sm:text-[1vw] text-[2.1vw] font-[600] mb-[2.2vw]"><a href="about.html">About </a></h4>
+
+                <h5><span><a href="#about">About us</a></span></h5>
+                <h5><span><a href="#video">Our App</a></span></h5>
+
+            </div>
+            <div class="nav-elem">
+                <h4 class="sm:text-[1vw] text-[2.1vw] font-[600] mb-[2.2vw]"><a href="contact.html">Contact us</a></h4>
+                <h5><span><a href="#locations">Location</a></span></h5>
+                <h5><span><a href="#Message">contact us</a></span></h5>
+            </div>
+        </div>
+
+        <i id="navcart" class=" felx justify-center items-center sm:text-[2vw] text-[3.5vw] top-0 fa fa-shopping-cart">
+            <span
+                class="absolute mt-[-1.2vw] ml-[1vw] flex justify-center items-center  bg-[red] text-center rounded-[50%] h-[2vw] w-[2vw] text-[1vw] font-extrabold">6</span>
+        </i>
+
+
+        <div id="nav-bottom"
+            class="w-[80%] h-[0%] absolute top-[100%] bg-[white] z-[9] border-b-[2px] border-[#382828]">
+
+        </div>
+
+    </nav>
+
+
+    <!-- navigation section ended -->
+    <!-- cart section started  -->
+    <div id="cartpopup" class="carttab bg-[black] text-[white] fixed z-20 p-[2vw]">
+        <h1 class=" m-0  text-[2vw] font-extrabold text-center bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600 text-transparent bg-clip-text">Shopping Cart</h1>
+        <div class="listcart">
+            <!-- about product in cart -->
+            <div class="product mb-[2vw]">
+                <div class="img ">
+                    <img class="w-[100%] " src="product/f2.jpg">
+                </div>
+                <div class="product-about">
+                    <span>Gucci</span>
+                    <h5>Funky Shirts</h5>
+                </div>
+                <div class="totalprice">
+                    $90
+                </div>
+                <div class="quantity">
+                    <span class="minus inline-block w-[25px] h-[25px] bg-[white] text-[#555] rounded-[50%] cursor-pointer"><</span>
+                    <span>1</span>
+                    <span class="plus  inline-block w-[25px] h-[25px] bg-[white] text-[#555] rounded-[50%] cursor-pointer">></span>
+                </div>
+            </div>
+            <div class="product mb-[2vw]">
+                <div class="img ">
+                    <img class="w-[100%]" src="product/f3.jpg">
+                </div>
+                <div class="product-about">
+                    <span>Gucci</span>
+                    <h5>Funky Shirts</h5>
+                </div>
+                <div class="totalprice">
+                    $99
+                </div>
+                <div class="quantity">
+                    <span class="minus inline-block w-[25px] h-[25px] bg-[white] text-[#555] rounded-[50%] cursor-pointer"><</span>
+                    <span>1</span>
+                    <span class="plus  inline-block w-[25px] h-[25px] bg-[white] text-[#555] rounded-[50%] cursor-pointer">></span>
+                </div>
+
+                
+            </div>
+            <div class="product mb-[2vw]">
+                <div class="img ">
+                    <img class="w-[100%]" src="product/f7.jpg">
+                </div>
+                <div class="product-about">
+                    <span>Gucci</span>
+                    <h5>Funky Shirts</h5>
+                </div>
+                <div class="totalprice">
+                    $80
+                </div>
+                <div class="quantity">
+                    <span class="minus inline-block w-[25px] h-[25px] bg-[white] text-[#555] rounded-[50%] cursor-pointer"><</span>
+                    <span>1</span>
+                    <span class="plus  inline-block w-[25px] h-[25px] bg-[white] text-[#555] rounded-[50%] cursor-pointer">></span>
+                </div>
+            </div>
+            <div class="product mb-[2vw]">
+                <div class="img ">
+                    <img class="w-[100%]" src="product/f5.jpg">
+                </div>
+                <div class="product-about">
+                    <span>Gucci</span>
+                    <h5>Funky Shirts</h5>
+                </div>
+                <div class="totalprice">
+                    $70
+                </div>
+                <div class="quantity">
+                    <span class="minus inline-block w-[25px] h-[25px] bg-[white] text-[#555] rounded-[50%] cursor-pointer"><</span>
+                    <span>1</span>
+                    <span class="plus  inline-block w-[25px] h-[25px] bg-[white] text-[#555] rounded-[50%] cursor-pointer">></span>
+                </div>
+            </div>
+            <div class="product mb-[2vw]">
+                <div class="img ">
+                    <img class="w-[100%]" src="product/f8.jpg">
+                </div>
+                <div class="product-about">
+                    <span>Gucci</span>
+                    <h5>Funky Shirts</h5>
+                </div>
+                <div class="totalprice">
+                    $101
+                </div>
+                <div class="quantity">
+                    <span class="minus inline-block w-[25px] h-[25px] bg-[white] text-[#555] rounded-[50%] cursor-pointer"><</span>
+                    <span>1</span>
+                    <span class="plus  inline-block w-[25px] h-[25px] bg-[white] text-[#555] rounded-[50%] cursor-pointer">></span>
+                </div>
+            </div>
+            <div class="product mb-[2vw]">
+                <div class="img ">
+                    <img class="w-[100%]" src="product/f6.jpg">
+                </div>
+                <div class="product-about">
+                    <span>Gucci</span>
+                    <h5>Funky Shirts</h5>
+                </div>
+                <div class="totalprice">
+                    $35
+                </div>
+                <div class="quantity">
+                    <span class="minus inline-block w-[25px] h-[25px] bg-[white] text-[#555] rounded-[50%] cursor-pointer"><</span>
+                    <span>1</span>
+                    <span class="plus  inline-block w-[25px] h-[25px] bg-[white] text-[#555] rounded-[50%] cursor-pointer">></span>
+                </div>
+            </div>
+
+             <!-- about product in cart -->
+        </div>
+        <div class="btn w-[90%] flex gap-[2vw]  m-[auto]">
+            <button id="close3" class="close w-full p-[0.5vw]  bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600   text-slate-800">CLOSE</button>
+            <button class="checkout w-full p-[0.5vw] bg-green-500">CHECK OUT</button>
+
+        </div>
+    </div>
+    <!-- cart section fnished  -->
+
+
+
+
+    <main>
+
+        <div class="shop-hero-section">
+            <div class="shop-hero-inside">
+                <div class="shop-hero-msg">#stayhome</div>
+                <div class="shop-hero-msgone">Save more with coupons & upto 70% off!</div>
+            </div>
+        </div>
+        <section class="shop-product">
+            <h2
+                class="relative text-[2vw] font-bold text-center bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600 text-transparent bg-clip-text">
+                Featured Products</h2>
+
+
+            <p class="font-bold text-center  bg-black bg-clip-text ">Summer Collection New Modern Design</p>
+            <!-- shirts section started -->
+            <div id="shirt" class="shirts bg-[#dfc6c6] w-[90%] m-[auto] pb-[2vw] rounded-[5px]">
+                <h3>Shirts</h3>
+                <div class="product-container">
+                    <div class="product ">
+                        <img src="product/f1.jpg">
+                        <div class="product-about">
+                            <span>Gucci</span>
+                            <h5>Funky Shirts</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$99</h4>
+                        </div>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="product">
+                        <img src="product/f2.jpg">
+                        <div class="product-about">
+                            <span>Gucci</span>
+                            <h5>Funky Shirts</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$99</h4>
+                        </div>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="product">
+                        <img src="product/f3.jpg">
+                        <div class="product-about">
+                            <span>Gucci</span>
+                            <h5>Funky Shirts</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$99</h4>
+                        </div>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="product">
+                        <img src="product/f4.jpg">
+                        <div class="product-about">
+                            <span>Gucci</span>
+                            <h5>Funky Shirts</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$99</h4>
+                        </div>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="product">
+                        <img src="product/f5.jpg">
+                        <div class="product-about">
+                            <span>Gucci</span>
+                            <h5>Funky Shirts</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$99</h4>
+                        </div>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="product">
+                        <img src="product/f6.jpg">
+                        <div class="product-about">
+                            <span>Gucci</span>
+                            <h5>Funky Shirts</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$99</h4>
+                        </div>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="product">
+                        <img src="product/n7.jpg">
+                        <div class="product-about">
+                            <span>Gucci</span>
+                            <h5>Funky Shirts</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$99</h4>
+                        </div>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="product">
+                        <img src="product/f8.jpg">
+                        <div class="product-about">
+                            <span>Gucci</span>
+                            <h5>Funky Shirts</h5>
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>$99</h4>
+                        </div>
+                        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sirts section ended -->
+
+
+        <!-- pants section started -->
+
+        <section id="pants" class="shop-product bg-[#dfc6c6] w-[90%] m-[auto] pb-[2vw] rounded-[5px] mt-[4vw]">
+            <h3>Pants</h3>
+            <div class="product-container">
+                <div class="product">
+                    <img src="product/n1.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/n2.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/n3.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/n4.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/n5.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/n6.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f7.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/n8.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- pants section ended -->
+
+        <!-- t-shirts section stsrted -->
+        <section id="t-shirt" class="shop-product bg-[#dfc6c6] w-[90%] m-[auto] pb-[2vw] rounded-[5px] mt-[4vw]">
+            <h3>T-Shirts</h3>
+            <div class="product-container">
+                <div class="product">
+                    <img src="product/f1.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f2.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f3.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f4.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f5.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f6.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f7.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f8.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- t-shirt section ended -->
+        <!-- trouser section started -->
+        <section id="trouser" class="shop-product bg-[#dfc6c6] w-[90%] m-[auto] pb-[2vw] rounded-[5px] mt-[4vw]">
+            <h3>Trousers</h3>
+            <div class="product-container">
+                <div class="product">
+                    <img src="product/f1.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f2.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f3.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f4.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f5.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f6.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f7.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <div class="product">
+                    <img src="product/f8.jpg">
+                    <div class="product-about">
+                        <span>Gucci</span>
+                        <h5>Funky Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$99</h4>
+                    </div>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+        </section>
+        <section class="page">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+        </section>
+    </main>
+        <!-- footer section started -->
+        <div id="sign-up" class="newsletter">
+            <div class="sign-up">
+                <h3>Sign Up For Newsletters</h3>
+                <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+            </div>
+            <div class="email">
+                <input class="text-[black]" placeholder="Your email address">
+                <button>Sign Up</button>
+            </div>
+        </div>
+      <!-- comment section started -->
+      <div id="comment"
+      class="absolute  bg-[black] w-[25vw] h-[15vw] z-10  ml-[63vw] mt-[-10vw] border-[#5541a8] border-solid border-[2px]">
+      <div class="flex items-center justify-between ml-[2vw]  mr-[2vw]">
+          <h1 class="text-[2vw] font-bold text-center bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600 text-transparent bg-clip-text">Sign-Up</h1>
+          <div id="close"><i class=" text-[1.5vw] invert fa-solid fa-circle-xmark"></i></div>
+      </div>
+
+      <div class="flex gap-[2vw] items-center justify-center mb-[1.5vw]">
+
+          <h2 id="reply" class="font-bold bg-gradient-to-r from-blue-600 via-purple-300 to-purple-600  rounded-md text-slate-800 mt-[2vw] p-[0.3vw] text-[1vw]">Click to enter E-mail id</h2>
+      </div>
+      <div id="thank " class="thank flex flex-col gap-[0.8vw] mb-[1vw]">
+          <h2 class="  text-[1vw] flex text-[white] justify-center items-center font-semibold line">
+              Thanks for showing interest in DATA DEMIGODS</h2>
+          <h2 class="  text-[1vw] flex text-[white] justify-center items-center font-semibold" >
+              We will start this service soon...</h2>
+      </div>
+
+
+
+  </div>
+  </div>
+  <!-- comment section  finished-->
+    <footer id="more-information">
+        <div class="footer-first">
+            <img class="h-[3vw] w-[17vw] invert" src="images/WhatsApp Image 2024-05-02 at 22.01.06_6bd35b20.jpg" alt=""
+                srcset="">
+            <h4>Contact</h4>
+            <p><b>Address:</b><span> Room No.21, Hostel No.23, BIT Sindri,Dhanbad</span></p>
+            <p><b>Phone:</b><span> (+91)9508657958,(+91)8002917108,(+91)9110969885</span></p>
+            <p><b>Hours:</b><span> 10:00 - 17:00, Mon-Sat</span></p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class=" text-[2vw] fab fa-facebook-square"></i>
+                    <i class="  text-[2vw] fab fa-instagram-square"></i>
+                    <i class="  text-[2vw] fab fa-youtube"></i>
+                    <i class="  text-[2vw] fab fa-x-twitter"></i>
+                    <i class="  text-[2vw] fab fa-linkedin"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-second">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-second">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="install">
+            <h4> Install App</h4>
+            <p>From Google Play or App Store</p>
+            <div class="phone">
+                <img src="product/play.jpg">
+                <img src="product/app.jpg">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="product/pay.png">
+        </div>
+        <div class="copyright text-[black] font-semibold">&copy 2024, Data Demigods, All Rights Reserved.</div>
+    </footer>
+   
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
