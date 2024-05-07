@@ -7,17 +7,17 @@ let cartpopup = document.getElementById("cartpopup");
 
 navcart.addEventListener("click", function () {
     cartpopup.style.visibility = "visible";
- 
+
 
 });
 
-let colse3= document.getElementById("colse3");
+let colse3 = document.getElementById("colse3");
 
 
 
 close3.addEventListener("click", function () {
     cartpopup.style.visibility = "hidden";
- 
+
 
 });
 
@@ -61,14 +61,14 @@ nav.addEventListener("mouseleave", function () {
     })
 })
 let t2 = gsap.timeline()
-t2.from(".shop-product h2",{
-    scale:0,
-    duration:0.5
+t2.from(".shop-product h2", {
+    scale: 0,
+    duration: 0.5
 })
 
-t2.from(".shop-product p",{
-    scale:0,
-    duration:0.5
+t2.from(".shop-product p", {
+    scale: 0,
+    duration: 0.5
 })
 
 // comment section started
@@ -79,7 +79,7 @@ let coms = document.getElementById("comment");
 
 sign.addEventListener("click", function () {
     coms.style.visibility = "visible";
- 
+
 
 });
 
@@ -98,7 +98,7 @@ let close = document.getElementById("close")
 close.addEventListener("click", function () {
     coms.style.visibility = "hidden";
     thank.style.visibility = "hidden";
- 
+
 
 });
 // comment section ended
@@ -148,17 +148,37 @@ high3.addEventListener("mouseleave", function () {
 });
 
 // submit button
+
+
+let bon = document.getElementById("bon");
+let fm = document.getElementsByClassName("fm");
 let popup = document.getElementById("popup");
+let form = document.getElementById("form");
+let span = form.getElementsByTagName("span");
+bon.addEventListener("click", function () {
+    if (fm[0].value == "") {
+        // alert("this field is necessary");
+        span[0].style.color = "red";
+        span[0].innerHTML = "Required";
 
-function openPopup() {
-  popup.classList.add("open-popup");
-}
+    }
+    else if (fm[1].value == "") {
+        span[1].style.color = "red";
+        span[1].innerHTML = "Required";
+
+    }
+    else if (fm[2].value == "") {
+        span[2].style.color = "red";
+        span[2].innerHTML = "Required";
+
+    }
+    else {
+        popup.classList.add("open-popup");
+
+
+    }
+
+})
 function closePopup() {
-  popup.classList.remove("open-popup");
+    popup.classList.remove("open-popup");
 }
-
-
-// high1.addEventListener("mouseleave", function () {
-//     ranjit.style.visibility = "hidden";
-
-// });
